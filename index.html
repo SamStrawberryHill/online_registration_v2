@@ -31,7 +31,13 @@
             <label for="city">City</label><br>
             <input type="text" id="city" name="user_city"><br>
             <label for="state">State</label><br>
-            <input type="text" id="state" name="user_state"><br>
+            <select id="state" name="user_state">
+              <optgroup label="choose_state">
+                <option value="choose_state">Choose State</option>
+              </optgroup>
+              <option value="alabama">Alabama</option>
+              <option value="alaska">Alaska</option>
+            </select><br>
             <label for="zipcode">Zip Code</label><br>
             <input type="text" id="zipcode" name="user_zipcode"><br>
         </fieldset>
