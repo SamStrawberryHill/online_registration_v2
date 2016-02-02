@@ -21,9 +21,9 @@
         <fieldset>
           <legend>Contact Information</legend>
             <label for="name">Full Name</label><br>
-            <input type="text" id="name" name="user_name" required><br>
+            <input type="text" id="name" name="user_name" placeholder="required"><br>
             <label for="email">Email Address</label><br>
-            <input type="text" id="email" name="user_email" required><br>
+            <input type="text" id="email" name="user_email" placeholder="required"><br>
             <label for="telephone">Phone Number</label><br>
             <input type="text" id="telephone" name="user_phone_number"><br>
             <label for="address">Street Address</label><br>
@@ -32,9 +32,7 @@
             <input type="text" id="city" name="user_city"><br>
             <label for="state">State</label><br>
             <select id="state" name="user_state">
-              <optgroup>
-                <option value="choose_state">Choose State</option>
-              </optgroup>
+              <optgroup label="Choose State">
               <option value="alabama">Alabama</option>
               <option value="alaska">Alaska</option>
               <option value="arizona">Arizona</option>
@@ -85,6 +83,7 @@
               <option value="west_virginia">West Virginia</option>
               <option value="wisconsin">Wisconsin</option>
               <option value="wyoming">Wisconsin</option>
+            </optgroup>
             </select><br>
             <label for="zipcode">Zip Code</label><br>
             <input type="text" id="zipcode" name="user_zipcode"><br>
@@ -92,7 +91,7 @@
         <hr>
         <fieldset>
           <legend>Newsletter</legend>
-            <label>Select the newsletters you'd like to recieve</label></br>
+            <label>Select the newsletters you'd like to recieve</label><br>
               <input type="checkbox" id="html" value="newsletter_html"
               name="user_newsletter"><label for="html">HTML News</label><br>
               <input type="checkbox" id="css" value="newsletter_css"
@@ -102,7 +101,7 @@
         </fieldset>
         <label>Newsletter format</label><br>
         <fieldset>
-          <input type="radio" id="html" value="html" name="user_format"><label for="html">
+          <input type="radio" id="html_news" value="html" name="user_format"><label for="html">
           HTML</label><br>
           <input type="radio" id="plain-text" value="plain-text" name="user_format"><label for="plain-text">
           Plain Text</label><br>
