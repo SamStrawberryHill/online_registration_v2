@@ -3,26 +3,37 @@
 }
 header {
   background: #2a2a40;
-
+  height: 7em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: .25em;
+  margin-left: .25em;
+  margin-bottom: .25em;
+  margin-right: .25em;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 body {
   font-family: 'Merriweather', sans-serif;
   color: #384047;
 }
-/*
-form {
+
+/*form {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
-}
+}*/
 
 h1 {
-  margin: 0 0 30px 0;
+  margin: 0 auto;
   text-align: center;
+  color: #fff;
 }
-
+/*
 input[type="text"],
 input[type="password"],
 input[type="date"],
