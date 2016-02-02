@@ -1,6 +1,9 @@
+
+/**** Global Styling ****/
 * {
   box-sizing: border-box;
 }
+/**** Heading ****/
 header {
   background: #2a2a40;
   height: 7em;
@@ -15,28 +18,31 @@ header {
   align-items: center;
   justify-content: center
 }
-body {
-  font-family: 'Merriweather', sans-serif;
-  color: #384047;
-}
-.newsletter {
+.newsletter-info {
   padding-left: 1em;
   padding-right: 1em;
 }
-.newsletter h2 {
+.newsletter-info h2 {
   text-align: center;
   font-size: 18px;
   font-weight: bolder;
   margin-bottom: .5em;
   padding-top: .5em;
 }
-.newsletter p {
+.newsletter-info p {
   text-align: center;
   color: #d3d3d3;
   font-size: 14px;
   margin: 0 auto;
   padding-bottom: 2em;
 }
+
+/**** Body ****/
+body {
+  font-family: 'Merriweather', sans-serif;
+  color: #384047;
+}
+
 .wrapper {
   text-align: left;
   padding-left: .25em;
@@ -50,6 +56,7 @@ body {
 fieldset {
   border: 0;
 }
+/**** HR Styles ****/
 .style1 {
   border-top: 4px solid;
   width: 90%;
@@ -71,11 +78,12 @@ h1 {
 }
 label {
   color: #a19d9d;
+  font-weight: lighter;
+  font-size: 14px;
 }
 
 input[type="text"],
-textarea,
-select {
+textarea {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
@@ -93,6 +101,19 @@ select {
 #name,
 #email {
   text-align: right;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 10px;
+}
+#zipcode {
+  width: 50%;
+}
+.newsletter {
+  font-weight: bolder;
+  font-size: 18px;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .25em;
 }
 
 input[type="radio"],
@@ -101,7 +122,17 @@ input[type="checkbox"] {
 }
 
 select {
-  padding: 6px;
-  height: 32px;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin-top: 1em;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
   border-radius: 2px;
 }
