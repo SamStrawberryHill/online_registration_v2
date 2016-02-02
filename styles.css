@@ -35,6 +35,12 @@ body {
   font-size: 14px;
   margin: 0 auto;
 }
+.wrapper {
+  text-align: center;
+}
+fieldset {
+  border: 0;
+}
 
 /*form {
   max-width: 300px;
