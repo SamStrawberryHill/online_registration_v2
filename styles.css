@@ -34,12 +34,33 @@ body {
   color: #d3d3d3;
   font-size: 14px;
   margin: 0 auto;
+  padding-bottom: 2em;
 }
 .wrapper {
-  text-align: center;
+  text-align: left;
+  padding-left: .25em;
+}
+.contact {
+  font-weight: bolder;
+  font-size: 18px;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 fieldset {
   border: 0;
+}
+.style1 {
+  border-top: 4px solid;
+  width: 90%;
+}
+.style2 {
+  border-top: 2px solid;
+  width: 90%;
+  margin-top: -6px;
+}
+.style3 {
+  border-top: 2px solid;
+  width: 90%
 }
 
 /*form {
