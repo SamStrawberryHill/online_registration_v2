@@ -1,9 +1,11 @@
-
 /**** Global Styling ****/
+
 * {
   box-sizing: border-box;
 }
+
 /**** Heading ****/
+
 header {
   background: #2a2a40;
   height: 7em;
@@ -13,17 +15,20 @@ header {
   font-size: 10px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
+
 h1 {
   margin: 0 auto;
   text-align: center;
   color: #fff;
 }
+
 .newsletter-info {
   padding-left: 1em;
   padding-right: 1em;
 }
+
 .newsletter-info h2 {
   text-align: center;
   font-size: 18px;
@@ -31,6 +36,7 @@ h1 {
   margin-bottom: .5em;
   padding-top: .5em;
 }
+
 .newsletter-info p {
   text-align: center;
   color: #C7C2C2;
@@ -41,40 +47,54 @@ h1 {
 }
 
 /**** Body ****/
+
 body {
   font-family: 'Merriweather', sans-serif;
   color: #384047;
 }
 
+#form {
+width: 100%;
+margin: 0 auto;
+padding: 0px;
+ }
+
 .wrapper {
   text-align: left;
   padding-left: .25em;
 }
+
 .contact {
   font-weight: bolder;
   font-size: 18px;
   padding-top: .5em;
   padding-bottom: .5em;
 }
+
 /**** HR Styles ****/
+
 .style1 {
   border-top: 4px solid;
-  width: 90%;
+  width: 94%;
 }
+
 .style2 {
   border-top: 2px solid;
-  width: 90%;
+  width: 94%;
   margin-top: -6px;
 }
+
 .style3 {
   border-top: 2px solid;
-  width: 90%
+  width: 94%
 }
 
 /**** Form Styles ****/
+
 fieldset {
   border: 0;
 }
+
 label {
   color: #a19d9d;
   font-weight: lighter;
@@ -87,7 +107,7 @@ select {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
-  height: auto;
+  height: 50px;
   margin-top: 1em;
   outline: 0;
   padding: 15px;
@@ -95,9 +115,10 @@ select {
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 4px;
 }
+
 #name,
 #email {
   text-align: right;
@@ -105,11 +126,9 @@ select {
   font-weight: lighter;
   font-size: 10px;
 }
-#zipcode {
-  width: 50%;
-  margin-bottom: 15px;
-}
+
 /**** Newsletter Selection Styles ****/
+
 .newsletter {
   font-weight: bolder;
   font-size: 18px;
@@ -117,15 +136,19 @@ select {
   padding-bottom: .5em;
   padding-left: .25em;
 }
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 10px 4px 8px 0;
 }
+
 #topics {
   height: 100px;
   margin-top: 0px;
 }
+
 /**** Button Styles ****/
+
 button {
   background-color: #2CC0B3;
   border: none;
@@ -138,6 +161,13 @@ button {
   border-radius: 4px;
   width: 100%;
 }
+
+/**** Zip Code ****/
+#zipcode {
+  width: 40%;
+  display: block;
+}
+
 /**** Copyright Styles ****/
 .copyright {
   color: #a19d9d;
@@ -145,4 +175,48 @@ button {
   font-size: 12px;
   text-align: center;
   font-style: italic;
+}
+
+/**** Media Queries ****/
+
+@media only screen and (min-width: 1200px) {
+
+.style1,
+.style2,
+.style3 {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#state {
+  height: 50px;
+  width: 390px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#form {
+height: 600px;
+width: 625px;
+margin: 0 auto;
+padding: 0px;
+ }
+
+.form-group label {
+font-size: 18px;
+height: 50px;
+width: 200px;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 3px;
+float: left;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.form-group input {
+height: 50px;
+width: 390px;
+margin-top: 7px;
+margin-bottom: 7px;
 }
