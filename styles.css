@@ -119,14 +119,37 @@ select {
   border-radius: 4px;
 }
 
-#name,
+/*#name,
 #email {
   text-align: right;
   font-style: italic;
   font-weight: lighter;
   font-size: 10px;
+}*/
+input::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 10px;
 }
-
+input::-moz-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 10px;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+  text-align: right;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 10px;
+}
+input:-ms-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 10px;
+}
 /**** Newsletter Selection Styles ****/
 
 .newsletter {
