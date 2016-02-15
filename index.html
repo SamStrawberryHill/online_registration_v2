@@ -24,19 +24,24 @@
               <legend class="contact">Contact Information</legend>
               <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name" required placeholder="Required">
+                <input type="text" id="name" name="user_name" value="" aria-describedby="name-format"
+                 required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" placeholder="Required">
+                 <span id="name-format" class="help">Format: firstname lastname</span>
               </div>
               <div class="form-group">
                 <label for="birthdate">Date Of Birth</label>
-                <input type="date" id="birthdate" name="user_birthdate"placeholder="MM/DD/YYYY">
+                <input type="date" id="birthdate" name="user_birthdate" pattern="MM/DD/YYYY"
+                required placeholder="MM/DD/YYYY">
               </div>
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="user_email" required placeholder="Required">
+                <input type="email" id="email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required placeholder="Required">
               </div>
               <div class="form-group">
                 <label for="telephone">Phone Number</label>
-                <input type="tel" id="telephone" name="user_phone_number" placeholder="(555) 555-5555">
+                <input type="tel" id="telephone" name="user_phone_number" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                 required placeholder="555-555-5555">
               </div>
               <div class="form-group">
                 <label for="address">Street Address</label>
@@ -53,7 +58,7 @@
               <div class="form-group">
                 <label for="state">State</label>
                 <select id="state" name="user_state">
-                  <optgroup label="Choose State">
+                  <option value="" disabled="disabled" selected="selected">Choose State</option>
                   <option value="alabama">Alabama</option>
                   <option value="alaska">Alaska</option>
                   <option value="arizona">Arizona</option>
@@ -104,7 +109,6 @@
                   <option value="west_virginia">West Virginia</option>
                   <option value="wisconsin">Wisconsin</option>
                   <option value="wyoming">Wisconsin</option>
-                </optgroup>
                 </select>
               </div>
               <div class="form-group">

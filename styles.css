@@ -46,7 +46,6 @@ h1 {
   font-weight: lighter;
 }
 
-
 /**** Body ****/
 
 body {
@@ -147,6 +146,13 @@ input:-ms-input-placeholder {
   font-weight: lighter;
   font-size: 10px;
 }
+.help {
+    display:none;
+}
+input:focus + .help {
+    display:inline-block;
+}
+
 input:focus,
 textarea:focus {
     outline:none;
