@@ -46,6 +46,7 @@ h1 {
   font-weight: lighter;
 }
 
+
 /**** Body ****/
 
 body {
@@ -102,6 +103,9 @@ label {
 }
 
 input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
 textarea ,
 select {
   background: rgba(255,255,255,0.1);
@@ -152,6 +156,11 @@ textarea:focus {
     -moz-box-shadow: 0px 0px 5px #4195fc;
     -webkit-box-shadow: 0px 0px 5px #4195fc;
 }
+.form-group input:required:valid { /* when a field is considered valid by the browser */
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
 
 /**** Newsletter Selection Styles ****/
 
@@ -166,6 +175,7 @@ textarea:focus {
 input[type="radio"],
 input[type="checkbox"] {
   margin: 10px 4px 8px 0;
+  display: inline-block;
 }
 
 #topics {
@@ -202,6 +212,7 @@ button {
   text-align: center;
   font-style: italic;
 }
+
 
 /**** Media Queries ****/
 @media only screen and (min-width: 760px) {
