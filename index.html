@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Code Review</title>
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Code Review</title>
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="styles.css">
+      <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     </head>
     <body>
       <header>
@@ -19,137 +19,136 @@
       <div id="form">
         <hr class="style1">
         <hr class="style2">
-          <form action="index.html" method="post">
-            <fieldset>
-              <legend class="contact">Contact Information</legend>
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name" value="" aria-describedby="name-format"
-                 required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" placeholder="Required">
-                 <span id="name-format" class="help">Format: firstname lastname</span>
-              </div>
-              <div class="form-group">
-                <label for="birthdate">Date Of Birth</label>
-                <input type="date" id="birthdate" name="user_birthdate" pattern="MM/DD/YYYY"
-                required placeholder="MM/DD/YYYY">
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-                required placeholder="Required">
-              </div>
-              <div class="form-group">
-                <label for="telephone">Phone Number</label>
-                <input type="tel" id="telephone" name="user_phone_number" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-                 required placeholder="555-555-5555">
-              </div>
-              <div class="form-group">
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address">
-              </div>
-              <div class="form-group">
-                <label for="apt">PO Box/Suite/Apt</label>
-                <input type="text" id="apt" name="user_apt">
-              </div>
-              <div class="form-group">
-                <label for="city">City</label>
-                <input type="text" id="city" name="user_city">
-              </div>
-              <div class="form-group">
-                <label for="state">State</label>
-                <select id="state" name="user_state">
-                  <option value="" disabled="disabled" selected="selected">Choose State</option>
-                  <option value="alabama">Alabama</option>
-                  <option value="alaska">Alaska</option>
-                  <option value="arizona">Arizona</option>
-                  <option value="arkansas">Arkansas</option>
-                  <option value="california">California</option>
-                  <option value="colorado">Colorado</option>
-                  <option value="conneticut">Conneticut</option>
-                  <option value="delaware">Delaware</option>
-                  <option value="florida">Florida</option>
-                  <option value="georgia">Georgia</option>
-                  <option value="hawaii">Hawaii</option>
-                  <option value="idaho">Idaho</option>
-                  <option value="illinois">Illinois</option>
-                  <option value="indiana">Indiana</option>
-                  <option value="iowa">Iowa</option>
-                  <option value="kansas">Kansas</option>
-                  <option value="kentucky">Kentucky</option>
-                  <option value="louisiana">Louisiana</option>
-                  <option value="maine">Maine</option>
-                  <option value="maryland">Maryland</option>
-                  <option value="massachusetts">Massachusetts</option>
-                  <option value="michigan">Michigan</option>
-                  <option value="minnesota">Minnesota</option>
-                  <option value="mississippi">Mississippi</option>
-                  <option value="missouri">Missssouri</option>
-                  <option value="montana">Montana</option>
-                  <option value="nebraska">Nebraska</option>
-                  <option value="nevada">Nevada</option>
-                  <option value="new_hampshire">New Hampshire</option>
-                  <option value="new_jersey">New Jersey</option>
-                  <option value="new_mexico">New Mexico</option>
-                  <option value="new_york">New York</option>
-                  <option value="north_carolina">North Carolina</option>
-                  <option value="north_dakota">North Dakota</option>
-                  <option value="ohio">Ohio</option>
-                  <option value="oklahoma">Oklahoma</option>
-                  <option value="oregon">Oregon</option>
-                  <option value="pennsylvania">Pennsylvania</option>
-                  <option value="rhode_island">Rhode Island</option>
-                  <option value="south_carolina">South Carolina</option>
-                  <option value="south_dakota">South Dakota</option>
-                  <option value="tennessee">Tennessee</option>
-                  <option value="texas">Texas</option>
-                  <option value="utah">Utah</option>
-                  <option value="vermont">Vermont</option>
-                  <option value="virginia">Virginia</option>
-                  <option value="washington">Washington</option>
-                  <option value="west_virginia">West Virginia</option>
-                  <option value="wisconsin">Wisconsin</option>
-                  <option value="wyoming">Wisconsin</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="zipcode">Zip Code</label>
-                <input type="text" id="zipcode" name="user_zipcode">
-              </div>
-            </fieldset>
-            <hr class="style3">
-            <fieldset>
-              <legend class="newsletter">Newsletter</legend>
-                <label>Select the newsletters you'd like to recieve</label><br>
-                  <input type="checkbox" id="html" value="newsletter_html"
-                  name="user_newsletter"><label for="html"><span>HTML News</span></label><br>
-                  <input type="checkbox" id="css" value="newsletter_css"
-                  name="user_newsletter"><label for="css"><span>CSS News</span></label><br>
-                  <input type="checkbox" id="javascript" value="newsletter_javascript"
-                  name="user_newsletter"><label for="javascript"><span>JavaScript News</span></label><br>
-                  <input type="checkbox" id="python" value="newsletter_python"
-                  name="user_newsletter"><label for="python"><span>Python Post</span></label><br>
-                  <input type="checkbox" id="ruby" value="newsletter_ruby"
-                  name="user_newsletter"><label for="ruby"><span>Ruby Review</span></label>
-            </fieldset>
-            <fieldset>
-            <label>Newsletter format</label><br>
-              <input type="radio" id="html_news" value="html" name="user_format"><label for="html">
-              HTML</label><br>
-              <input type="radio" id="plain-text" value="plain-text" name="user_format"><label for="plain-text">
-              Plain Text</label><br>
-            </fieldset>
-            <fieldset>
-              <label>Other topics you'd like to hear about</label><br>
-            </fieldset>
-            <fieldset>
-              <textarea id="topics" name="user_topics">
-              </textarea>
-            </fieldset>
-            <fieldset>
-              <button type="submit">Sign Up</button><br>
-            </fieldset>
-          <p class="copyright"> Copyright The Code Review</p>
+        <form action="index.html" method="post">
+          <fieldset>
+            <legend class="contact">Contact Information</legend>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="user_name" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"
+              required placeholder="Required">
+            </div>
+            <div class="form-group">
+              <label for="birthdate">Date Of Birth</label>
+              <input type="date" id="birthdate" name="user_birthdate" pattern="MM/DD/YYYY"
+              required placeholder="MM/DD/YYYY">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+              required placeholder="Required">
+            </div>
+            <div class="form-group">
+              <label for="telephone">Phone Number</label>
+              <input type="tel" id="telephone" name="user_phone_number" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+               required placeholder="555-555-5555">
+            </div>
+            <div class="form-group">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" name="user_address">
+            </div>
+            <div class="form-group">
+              <label for="apt">PO Box/Suite/Apt</label>
+              <input type="text" id="apt" name="user_apt">
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="user_city">
+            </div>
+            <div class="form-group">
+              <label for="state">State</label>
+              <select id="state" name="user_state">
+                <option value="" disabled="disabled" selected="selected">Choose State</option>
+                <option value="alabama">Alabama</option>
+                <option value="alaska">Alaska</option>
+                <option value="arizona">Arizona</option>
+                <option value="arkansas">Arkansas</option>
+                <option value="california">California</option>
+                <option value="colorado">Colorado</option>
+                <option value="conneticut">Conneticut</option>
+                <option value="delaware">Delaware</option>
+                <option value="florida">Florida</option>
+                <option value="georgia">Georgia</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="idaho">Idaho</option>
+                <option value="illinois">Illinois</option>
+                <option value="indiana">Indiana</option>
+                <option value="iowa">Iowa</option>
+                <option value="kansas">Kansas</option>
+                <option value="kentucky">Kentucky</option>
+                <option value="louisiana">Louisiana</option>
+                <option value="maine">Maine</option>
+                <option value="maryland">Maryland</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="michigan">Michigan</option>
+                <option value="minnesota">Minnesota</option>
+                <option value="mississippi">Mississippi</option>
+                <option value="missouri">Missssouri</option>
+                <option value="montana">Montana</option>
+                <option value="nebraska">Nebraska</option>
+                <option value="nevada">Nevada</option>
+                <option value="new_hampshire">New Hampshire</option>
+                <option value="new_jersey">New Jersey</option>
+                <option value="new_mexico">New Mexico</option>
+                <option value="new_york">New York</option>
+                <option value="north_carolina">North Carolina</option>
+                <option value="north_dakota">North Dakota</option>
+                <option value="ohio">Ohio</option>
+                <option value="oklahoma">Oklahoma</option>
+                <option value="oregon">Oregon</option>
+                <option value="pennsylvania">Pennsylvania</option>
+                <option value="rhode_island">Rhode Island</option>
+                <option value="south_carolina">South Carolina</option>
+                <option value="south_dakota">South Dakota</option>
+                <option value="tennessee">Tennessee</option>
+                <option value="texas">Texas</option>
+                <option value="utah">Utah</option>
+                <option value="vermont">Vermont</option>
+                <option value="virginia">Virginia</option>
+                <option value="washington">Washington</option>
+                <option value="west_virginia">West Virginia</option>
+                <option value="wisconsin">Wisconsin</option>
+                <option value="wyoming">Wisconsin</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="zipcode">Zip Code</label>
+              <input type="text" id="zipcode" name="user_zipcode">
+            </div>
+          </fieldset>
+          <hr class="style3">
+          <fieldset>
+            <legend class="newsletter">Newsletter</legend>
+              <label>Select the newsletters you'd like to recieve</label><br>
+                <input type="checkbox" id="html" value="newsletter_html"
+                name="user_newsletter"><label for="html"><span>HTML News</span></label><br>
+                <input type="checkbox" id="css" value="newsletter_css"
+                name="user_newsletter"><label for="css"><span>CSS News</span></label><br>
+                <input type="checkbox" id="javascript" value="newsletter_javascript"
+                name="user_newsletter"><label for="javascript"><span>JavaScript News</span></label><br>
+                <input type="checkbox" id="python" value="newsletter_python"
+                name="user_newsletter"><label for="python"><span>Python Post</span></label><br>
+                <input type="checkbox" id="ruby" value="newsletter_ruby"
+                name="user_newsletter"><label for="ruby"><span>Ruby Review</span></label>
+          </fieldset>
+          <fieldset>
+          <label>Newsletter format</label><br>
+            <input type="radio" id="html_news" value="html" name="user_format"><label for="html">
+            HTML</label><br>
+            <input type="radio" id="plain-text" value="plain-text" name="user_format"><label for="plain-text">
+            Plain Text</label><br>
+          </fieldset>
+          <fieldset>
+            <label>Other topics you'd like to hear about</label><br>
+          </fieldset>
+          <fieldset>
+            <textarea id="topics" name="user_topics">
+            </textarea>
+          </fieldset>
+          <fieldset>
+            <button type="submit">Sign Up</button><br>
+          </fieldset>
+        <p class="copyright"> Copyright The Code Review</p>
         </form>
-        </div>
+      </div>
     </body>
 </html>
