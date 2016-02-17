@@ -29,7 +29,7 @@
             </div>
             <div class="form-group">
               <label for="birthdate">Date Of Birth</label>
-              <input type="date" id="birthdate" name="user_birthdate" pattern="MM/DD/YYYY"
+              <input type="text" id="birthdate" name="user_birthdate" pattern="MM/DD/YYYY"
               required placeholder="MM/DD/YYYY">
             </div>
             <div class="form-group">
@@ -132,13 +132,13 @@
           </fieldset>
           <fieldset>
           <label>Newsletter format</label><br>
-            <input type="radio" id="html_news" value="html" name="user_format"><label for="html">
+            <input type="radio" id="html_news" value="html" name="user_format"><label for="html_news">
             HTML</label><br>
             <input type="radio" id="plain-text" value="plain-text" name="user_format"><label for="plain-text">
             Plain Text</label><br>
           </fieldset>
           <fieldset>
-            <label>Other topics you'd like to hear about</label><br>
+            <label for="topics">Other topics you'd like to hear about</label><br>
           </fieldset>
           <fieldset>
             <textarea id="topics" name="user_topics">
